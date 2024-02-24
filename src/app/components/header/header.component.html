@@ -1,0 +1,10 @@
+<tr-logotype class="tr-logotype"/>
+
+@if (windowWidth < 1152) {
+    <button class="button-navigation"></button>
+}
+
+@if (windowWidth >= 1152) {
+    <tr-navigation class="tr-navigation" />
+    <tr-authorization class="tr-authorization" />
+}

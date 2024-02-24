@@ -1,0 +1,27 @@
+.tr-logotype {
+    grid-area: tr-logotype;
+
+    display: grid;
+}
+
+.button-navigation {
+    min-width: 50px;
+    min-height: 50px;
+
+    grid-area: buttom-navigation;
+
+    background: transparent url('../../../assets/buttom-navigation.svg') center no-repeat;
+    cursor: pointer;
+}
+
+.tr-navigation {
+    grid-area: tr-navigation;
+    display: grid;
+}
+
+.tr-authorization {
+    grid-area: tr-authorization;
+    display: grid;
+    grid-template-columns: repeat(2 , minmax(min-content, max-content));
+    column-gap: 36px;
+}
