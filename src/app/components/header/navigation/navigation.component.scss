@@ -5,5 +5,74 @@
 }
 
 .navigation-item {
+    position: relative;
+    display: grid;
+    place-items: center;
+
+    font-weight: 400;
+    font-size: 20px;
+    color: transparent;
     text-decoration: none;
+
+    padding-bottom: 1px;
+    border-bottom: 3px solid transparent;
+
+    &:hover {
+        border-bottom-color: #FF7757;
+    }
+}
+
+.navigation__home {    
+    &::after {
+        position: absolute;
+        content: 'Home';
+        color: white;
+    }
+    &:hover::after {
+        font-weight: 500;
+    }
+}
+
+.navigation__explore {
+    &::after {
+        position: absolute;
+        content: 'Explore';
+        color: white;
+    }
+    &:hover::after {
+        font-weight: 500;
+    }
+}
+
+.navigation__travel {
+    &::after {
+        position: absolute;
+        content: 'Travel';
+        color: white;
+    }
+    &:hover::after {
+        font-weight: 500;
+    }
+}
+
+.navigation__blog {
+    &::after {
+        position: absolute;
+        content: 'Blog';
+        color: white;
+    }
+    &:hover::after {
+        font-weight: 500;
+    }
+}
+
+.navigation__pricing {
+    &::after {
+        position: absolute;
+        content: 'Pricing';
+        color: white;
+    }
+    &:hover::after {
+        font-weight: 500;
+    }
 }

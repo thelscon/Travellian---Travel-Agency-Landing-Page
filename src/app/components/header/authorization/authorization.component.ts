@@ -9,4 +9,21 @@ import { AuthorizationComponentModel } from './authorization.component.model';
   templateUrl: './authorization.component.html',
   styleUrl: './authorization.component.scss'
 })
-export class AuthorizationComponent implements AuthorizationComponentModel {}
+export class AuthorizationComponent implements AuthorizationComponentModel {
+  activeLoginButton = false
+  activeSignUpButton = true
+  
+  login () {
+    if (!this.activeLoginButton) {
+      this.activeSignUpButton = false
+      this.activeLoginButton = true
+    }
+  }
+
+  signUp () {
+    if (!this.activeSignUpButton) {
+      this.activeLoginButton = false
+      this.activeSignUpButton = true
+    }
+  }
+}

@@ -7,6 +7,15 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Rubik';
+    src: url('../src/assets/fonts/Rubik/500/Rubik-Medium.woff2') format('woff2'),
+        url('../src/assets/fonts/Rubik/500/Rubik-Medium.woff') format('woff'),
+        url('../src/assets/fonts/Rubik/500/Rubik-Medium.svg#Rubik-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
 * {
     box-sizing: border-box;
     margin: 0px;
